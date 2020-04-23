@@ -27,41 +27,6 @@ class Maze:
             print('')
 
 
-class Cell:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-        self.pos = (x, y)
-
-
-class Path(Cell):
-
-    def str_render(self):
-        return 'X'
-
-
-    def is_wall(self):
-        return False
-
-
-class Wall(Cell):
-
-    def str_render(self):
-        return "#"
-
-    def is_wall(self):
-        return True
-
-
-class Ground(Cell):
-
-    def str_render(self):
-        return ' '
-
-    def is_wall(self):
-        return False
-
-
 class Challenger:
 
     def __init__(self):
